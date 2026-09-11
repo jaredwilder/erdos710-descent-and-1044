@@ -1,69 +1,73 @@
 # erdos710-descent-and-1044
 
-An observed prime-descent law for Erdos #710 with five primes held out as a live test, the sealed
-Hall-matching theorems behind the machine work on that problem, and a closed form for the Erdos
-#1044 extremal family.
+An **observed prime-descent law for Erdős 710 with five held-out primes**, five sealed Hall-matching
+theorems behind the computation, and a **closed form for the Erdős 1044 extremal family**.
 
 Author: Jared Wilder. First public timestamp: 2026-09-10.
 
-## Erdos 710: the prime-descent law
+## Erdős 710 — prime-descent law
 
-f(n) is the minimal L such that the open interval (n, n+L) contains distinct integers
-a_1, ..., a_n with k dividing a_k for every k.
+Let `f(n)` be the minimal `L` such that the open interval `(n,n+L)` contains distinct integers
+`a_1,...,a_n` with `k | a_k` for every `k`.
 
-**Status, in the source document's own third line: OBSERVED, tested family n <= 114. NOT A
-THEOREM.**
+**Evidence class: exhaustive finite observation through `n <= 114`, with five primes held out and
+computed only after the law was stated.**
 
-    LAW-1 (strong)  f(p) < f(p-1) for EVERY prime p with 13 <= p <= 113.  25/25, no exceptions.
-    LAW-2 (weak)    f(p) <= f(p-1) for every prime p >= 5 in range.       5, 7, 11 give equality.
+    LAW-1 (strong)  f(p) < f(p-1) for every prime 13 <= p <= 113.  25/25, no exceptions.
+    LAW-2 (weak)    f(p) <= f(p-1) for every prime p >= 5 in range.     5, 7, 11 give equality.
     LAW-3 (step)    every descent of f in [1,114] has magnitude exactly 1.
 
-**The five primes 101, 103, 107, 109, 113 were computed after the law was stated.** That makes
-them a held-out test rather than a fit, which is the reason this document is worth reading at all.
+The held-out primes were **101, 103, 107, 109, 113**. Their agreement with the pre-stated law is
+the strongest part of the finite evidence because they were tests, not fit points.
 
-Boundary facts the document states so that nobody overclaims:
+### Exact finite boundary
 
-- p = 2 and p = 3 are **ascents**. LAW-1 starts at 13, LAW-2 at 5.
-- Primality is sufficient in range but **not necessary**: composite descents exist at 33, 34, 49,
-  51, 57, 58, 62, 65, 66, 74, 76, 77, 82, 85, 86, 87, 91 through 95, 99, and more.
-- Prior art was **not** checked beyond the problem's own page, and the document says so.
+- `p=2` and `p=3` are ascents, so LAW-1 starts at 13 and LAW-2 at 5.
+- Primality is sufficient in the tested range but not necessary; composite descents also occur.
+- Historical novelty has not been adjudicated beyond the problem page.
 
-Values come from exhaustive Hall bipartite matching, unseeded, incremental from L = n+1, with Hall
-deficit 0 at every computed point. `e710.py`, `hall.py` and `fast.py` are here; `ratios.json` and
-`ratios-big.json` carry the computed values.
+The values come from exhaustive Hall bipartite matching, unseeded and incremental from `L=n+1`,
+with Hall deficit zero at every computed point. `e710.py`, `hall.py`, `fast.py`, `ratios.json`, and
+`ratios-big.json` carry the computation.
 
-Known literature for the asymptotics, recorded in the source: Erdos-Pomerance 1980 brackets f(n)
-between (2 / sqrt e) n sqrt(log n / log log n) and 1.7398 n sqrt(log n).
+Known asymptotic literature, recorded in the source, is Erdős–Pomerance 1980.
 
-## The sealed theorems
+## Five sealed Hall theorems
 
 `sealed-library/` holds five Lean theorems, each kernel-verified with a clean axiom footprint:
 
-- `hall_deficiency_blocks` — a deficient witness set admits no injective transversal. The Hall
-  soundness core.
-- `deficient_union_blocks_injection_repaired` — authored, failed at the kernel, re-authored,
-  sealed.
-- `feasible_iff_assignment`, `bounded_feasible_threshold`, `e710_lower_bound_50`.
+- `hall_deficiency_blocks` — a deficient witness set admits no injective transversal;
+- `deficient_union_blocks_injection_repaired` — authored, failed at the kernel, re-authored and
+  sealed;
+- `feasible_iff_assignment`;
+- `bounded_feasible_threshold`;
+- `e710_lower_bound_50`.
 
-**A label correction, recorded here because it nearly propagated:** an automated reader described
-`e710_lower_bound_50` as "R(5,5) >= 50". It is **not** a Ramsey result. It states that a specific
-deficient index set admits no injective transversal into its divisibility neighborhood, which is
-an Erdos 710 lower bound. R(5,5) >= 50 would contradict the literature and is not claimed anywhere
-in this work.
+A label correction is preserved because it is semantically important: an automated reader once
+described `e710_lower_bound_50` as `R(5,5) >= 50`. It is not a Ramsey statement; it is an Erdős 710
+Hall-deficiency lower-bound theorem. The correction changes the label, not the theorem.
 
-`erdos710-formalizer/` carries the campaign directories that produced them, with receipts.
+`erdos710-formalizer/` carries the campaign directories and receipts that produced the sealed
+library.
 
-## Erdos 1044
+## Erdős 1044 — closed form for the extremal family
 
-`erdos1044/` — Tang proved in 2026 that the infimum of Lambda over all degrees is 2. This work
-contributes a **closed form for the extremal family**:
+Tang proved in 2026 that the infimum of `Lambda` over all degrees is 2. This repository contributes
+the exact family formula
 
-    Lambda(z^n - 1) = (2 sqrt(pi) / n) * 2^(1/n - 1) * Gamma(1/2n) / Gamma(1/2n + 1/2)
+`Lambda(z^n - 1) = (2 sqrt(pi) / n) * 2^(1/n - 1) * Gamma(1/2n) / Gamma(1/2n + 1/2)`
 
-verified monotone decreasing with asymptotic 2 + 4 ln 2 / n + O(1/n^2), and checked to satisfy
-Lambda > 2 at every degree from 2 to 25.
+with monotone decrease and asymptotic
 
-**This is a closed form plus bounded numerical verification. It is not a proof of #1044.**
+`2 + 4 ln 2 / n + O(1/n^2)`.
+
+The formula is numerically checked to satisfy `Lambda > 2` for every degree `2 <= n <= 25`.
+
+### Scope
+
+For Erdős 710, the prime-descent law is a finite observed law with a genuine held-out test and a
+separate sealed theorem library underneath it. For Erdős 1044, the contribution is the exact closed
+form and its finite numerical checks; Tang's theorem supplies the global infimum result.
 
 ## License
 
