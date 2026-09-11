@@ -1,0 +1,129 @@
+{
+  "campaign_id": "gpt56-luna-CLOSE710-erdos710-2026-09-03-deficiency_transfer_of_equal_cardinality-20260903T163042",
+  "created_at": "2026-09-03T23:30:42Z",
+  "discovery": {
+    "candidates": [
+      {
+        "actor": "close-driver",
+        "answer": "deficiency_transfer_of_equal_cardinality",
+        "answer_sha256": "87e43c9881c5f539f8cd81185df95dfb9b4b5f5938d7006528e8d6527290c7b2",
+        "at": "2026-09-03T23:30:42Z",
+        "evidence": "python computation + reflection soundness",
+        "falsification": "a counterexample to the stated theorem",
+        "id": "answer-87e43c9881c5",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:30:42Z",
+            "attacks": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:30:49Z",
+            "attacks": [],
+            "reviewer": "gemini-external-court",
+            "verdict": "APPROVE"
+          }
+        ],
+        "route": "INFORMAL_RESEARCH"
+      }
+    ],
+    "frozen_answer": {
+      "answer": "deficiency_transfer_of_equal_cardinality",
+      "answer_sha256": "87e43c9881c5f539f8cd81185df95dfb9b4b5f5938d7006528e8d6527290c7b2",
+      "at": "2026-09-03T23:30:42Z",
+      "frozen_at": "2026-09-03T23:30:49Z",
+      "id": "answer-87e43c9881c5",
+      "route": "INFORMAL_RESEARCH"
+    },
+    "status": "FROZEN"
+  },
+  "final_receipt": null,
+  "kbk_promotions": [],
+  "nodes": {
+    "root": {
+      "attempts": [],
+      "authority_target": "FULL_FORMALIZATION",
+      "blocker": null,
+      "created_at": "2026-09-03T23:30:56Z",
+      "deps": [],
+      "id": "root",
+      "kernel_receipt": null,
+      "kind": "THEOREM",
+      "route": "FORMAL_WORKER",
+      "source_refs": [],
+      "state": "READY",
+      "statement": "deficiency_transfer_of_equal_cardinality",
+      "tags": [],
+      "updated_at": "2026-09-03T23:30:56Z"
+    }
+  },
+  "problem": {
+    "authority_target": "FULL_FORMALIZATION",
+    "hard_mode": true,
+    "research_policy": {
+      "clean_room": false,
+      "knowledge_cutoff": null,
+      "rule": "Task-specific prior solutions may be consulted if provenance is recorded"
+    },
+    "sources": [],
+    "statement": "deficiency_transfer_of_equal_cardinality",
+    "statement_sha256": "87e43c9881c5f539f8cd81185df95dfb9b4b5f5938d7006528e8d6527290c7b2"
+  },
+  "root_node": "root",
+  "schema": "oracle.frontier-formalizer.v1",
+  "semantic_court": {
+    "accepted_at": "2026-09-03T23:30:56Z",
+    "accepted_candidate": "answer-87e43c9881c5",
+    "candidates": {
+      "answer-87e43c9881c5": {
+        "artifact": null,
+        "created_at": "2026-09-03T23:30:49Z",
+        "creator": "close-driver",
+        "derived_from_answer_sha256": "87e43c9881c5f539f8cd81185df95dfb9b4b5f5938d7006528e8d6527290c7b2",
+        "explanation": "deficiency_transfer_of_equal_cardinality",
+        "id": "answer-87e43c9881c5",
+        "lean_statement": "deficiency_transfer_of_equal_cardinality",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:30:49Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:30:56Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "gemini-external-court",
+            "verdict": "APPROVE"
+          }
+        ],
+        "source_alignment": [
+          {
+            "lean": "deficiency_transfer_of_equal_cardinality",
+            "source": "contract"
+          }
+        ],
+        "statement_sha256": "87e43c9881c5f539f8cd81185df95dfb9b4b5f5938d7006528e8d6527290c7b2"
+      }
+    },
+    "min_reviews": 2
+  },
+  "updated_at": "2026-09-03T23:30:56Z"
+}

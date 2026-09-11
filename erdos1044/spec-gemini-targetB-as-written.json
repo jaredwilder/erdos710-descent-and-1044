@@ -1,0 +1,24 @@
+{
+ "math_receipt": {
+  "receiptId": "ERDOS1044-LAMBDA-BOUNDED-2026-07-27",
+  "status": "closed",
+  "proofStatus": "bounded_verified",
+  "resultSha256": "9dd961f8adad8882e5bad0a9a49023a8cb688a5890543dab5dd9343e817150dc",
+  "claimBoundary": "Erdos Problem #1044 [EHP58] was RESOLVED BY QUANYU TANG (2026), not by this run: inf_f Lambda(f) = 2 over all degrees, not attained, where f is monic with all roots in the closed unit disc and Lambda(f) is the maximum boundary length of a connected component of {z : |f(z)| < 1}. Upper bound from the family z^n - 1; lower bound Lambda(f) > 2 from Pommerenke [Po61, Thm 3] (some component has diam > 1) plus length >= 2*diam. A Lean formalisation exists (L. Luccioli, 2026) and was NOT executed here. WHAT THIS RECEIPT CERTIFIES, and nothing more: (1) a CLOSED FORM for the extremal family, Lambda(z^n - 1) = (2 sqrt(pi)/n) 2^(1/n - 1) Gamma(1/2n)/Gamma(1/2n + 1/2), derived by w = z^n and verified to equal 2*pi exactly at n = 1, monotone decreasing, with n*(Lambda_n - 2) -> 4 ln 2 = 2.7725887, so Lambda_n = 2 + 4ln2/n + O(1/n^2); (2) an independent grid measurement of Lambda by marching squares on log|f|, calibrated against the exact 2*pi at n = 1 to absolute error 2.6e-7; (3) Lambda > 2 on every sampled admissible configuration across degrees 2..25, with the floor BROKEN as required when roots are allowed outside the disc, so the test is not vacuous; (4) length >= 2*diam on every measured component; (5) a fixed-degree exhaustive angle scan whose POSITIVE CONTROL at degree 2 recovers Tang's PROVEN minimiser z^2 - 1 at angle exactly pi, and whose degree-3 minimiser is the cube roots of unity. NOT CLAIMED: any proof of #1044, any proof of the fixed-degree conjecture (degree 3 remains OPEN; this is numerical support at a stated resolution only), or any statement about degrees beyond those scanned.",
+  "measured_constants": {
+   "Lambda_z2_minus_1": 3.708149354602744,
+   "Lambda_z3_minus_1": 3.059908074114386,
+   "degree3_runner_up_unequal_spacing": 4.68877,
+   "degree3_one_root_pulled_to_0.9": 7.3376,
+   "asymptotic_excess_coefficient": 2.772588722239781
+  }
+ },
+ "mechanism": "Place n target-binding aptamers at positions z_1..z_n on a spherical nanoparticle. The combined binding potential to a cell surface is U(z)=sum ln|z-z_i|=ln|f(z)|. Tuning geometry so the degree n is large makes the boundary of {|f|<1} approach sharp needle-like lobes, so binding affinity jumps by orders of magnitude when the receptor geometry matches the root layout.",
+ "biological_object_class": "multivalent nanoparticles for tumour targeting",
+ "required_data": [
+  "aptamer positions",
+  "receptor distribution"
+ ],
+ "target_owner": "jared",
+ "expected_discriminating_outcome": "high avidity on matching receptor layouts, zero binding otherwise"
+}

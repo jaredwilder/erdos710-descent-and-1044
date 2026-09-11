@@ -1,0 +1,158 @@
+{
+  "campaign_id": "gpt56-luna-CLOSE710-erdos710-2026-09-03-bounded_feasible_threshold-20260903T163655",
+  "created_at": "2026-09-03T23:36:55Z",
+  "discovery": {
+    "candidates": [
+      {
+        "actor": "close-driver",
+        "answer": "bounded_feasible_threshold",
+        "answer_sha256": "0446a2503ddc22d6726071d2492efc6c0dec92e4f0de180fd1e1353c9aa4740b",
+        "at": "2026-09-03T23:36:55Z",
+        "evidence": "python computation + reflection soundness",
+        "falsification": "a counterexample to the stated theorem",
+        "id": "answer-0446a2503ddc",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:36:55Z",
+            "attacks": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:37:01Z",
+            "attacks": [],
+            "reviewer": "gemini-external-court",
+            "verdict": "APPROVE"
+          }
+        ],
+        "route": "INFORMAL_RESEARCH"
+      }
+    ],
+    "frozen_answer": {
+      "answer": "bounded_feasible_threshold",
+      "answer_sha256": "0446a2503ddc22d6726071d2492efc6c0dec92e4f0de180fd1e1353c9aa4740b",
+      "at": "2026-09-03T23:36:55Z",
+      "frozen_at": "2026-09-03T23:37:01Z",
+      "id": "answer-0446a2503ddc",
+      "route": "INFORMAL_RESEARCH"
+    },
+    "status": "FROZEN"
+  },
+  "final_receipt": {
+    "path": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\gpt56-luna-CLOSE710-erdos710-2026-09-03-bounded_feasible_threshold-20260903T163655\\receipts\\FINAL.json",
+    "sha256": "287ae381d6e19f790c3357217627df8f0eb6efe95ba12c128b90836e4cd897a0"
+  },
+  "kbk_promotions": [],
+  "nodes": {
+    "root": {
+      "attempts": [],
+      "authority_target": "FULL_FORMALIZATION",
+      "blocker": null,
+      "created_at": "2026-09-03T23:37:07Z",
+      "deps": [],
+      "id": "root",
+      "kernel_receipt": {
+        "backend": "wsl",
+        "declarations": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true,
+            "declaration": "bounded_feasible_threshold"
+          }
+        ],
+        "errors": [],
+        "exitCode": 0,
+        "file": "oracle/frontier_formalizer/work/gpt56-luna-CLOSE710-erdos710-2026-09-03-bounded_feasible_threshold-20260903T163655/bounded_feasible_threshold.lean",
+        "needsMathlib": true,
+        "project": "/root/erdosfire-bench/proofs",
+        "seconds": 39.5,
+        "status": "VERIFIED"
+      },
+      "kind": "THEOREM",
+      "proof_binding": {
+        "declaration": "bounded_feasible_threshold",
+        "lean_file": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\gpt56-luna-CLOSE710-erdos710-2026-09-03-bounded_feasible_threshold-20260903T163655\\bounded_feasible_threshold.lean",
+        "lean_sha256": "0ef6924ce58b0f1266fa726a958053bf2e2e624bfcdcc7a87c4473d5e5d2ee4f",
+        "node_statement_sha256": "0446a2503ddc22d6726071d2492efc6c0dec92e4f0de180fd1e1353c9aa4740b"
+      },
+      "route": "FORMAL_WORKER",
+      "source_refs": [],
+      "state": "VERIFIED",
+      "statement": "bounded_feasible_threshold",
+      "tags": [],
+      "updated_at": "2026-09-03T23:37:59Z"
+    }
+  },
+  "problem": {
+    "authority_target": "FULL_FORMALIZATION",
+    "hard_mode": true,
+    "research_policy": {
+      "clean_room": false,
+      "knowledge_cutoff": null,
+      "rule": "Task-specific prior solutions may be consulted if provenance is recorded"
+    },
+    "sources": [],
+    "statement": "bounded_feasible_threshold",
+    "statement_sha256": "0446a2503ddc22d6726071d2492efc6c0dec92e4f0de180fd1e1353c9aa4740b"
+  },
+  "root_node": "root",
+  "schema": "oracle.frontier-formalizer.v1",
+  "semantic_court": {
+    "accepted_at": "2026-09-03T23:37:07Z",
+    "accepted_candidate": "answer-0446a2503ddc",
+    "candidates": {
+      "answer-0446a2503ddc": {
+        "artifact": null,
+        "created_at": "2026-09-03T23:37:01Z",
+        "creator": "close-driver",
+        "derived_from_answer_sha256": "0446a2503ddc22d6726071d2492efc6c0dec92e4f0de180fd1e1353c9aa4740b",
+        "explanation": "bounded_feasible_threshold",
+        "id": "answer-0446a2503ddc",
+        "lean_statement": "bounded_feasible_threshold",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:37:01Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:37:07Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "gemini-external-court",
+            "verdict": "APPROVE"
+          }
+        ],
+        "source_alignment": [
+          {
+            "lean": "bounded_feasible_threshold",
+            "source": "contract"
+          }
+        ],
+        "statement_sha256": "0446a2503ddc22d6726071d2492efc6c0dec92e4f0de180fd1e1353c9aa4740b"
+      }
+    },
+    "min_reviews": 2
+  },
+  "updated_at": "2026-09-03T23:37:59Z"
+}

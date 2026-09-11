@@ -1,0 +1,60 @@
+{
+  "campaign_id": "gpt56-luna-CLOSE710-erdos710-2026-09-03-assignment_value_in_biUnion-20260903T162958",
+  "created_at": "2026-09-03T23:29:58Z",
+  "discovery": {
+    "candidates": [
+      {
+        "actor": "close-driver",
+        "answer": "assignment_value_in_biUnion",
+        "answer_sha256": "4c77ac9eff8fcda3a308e4d1e09b6d5ea222ff249a53314431ec363ad61f7525",
+        "at": "2026-09-03T23:29:58Z",
+        "evidence": "python computation + reflection soundness",
+        "falsification": "a counterexample to the stated theorem",
+        "id": "answer-4c77ac9eff8f",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:29:58Z",
+            "attacks": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:30:03Z",
+            "attacks": [
+              "external-court:  {α β : Type*} [DecidableEq α] [DecidableEq β]     (S : Finset α) (t : α → Finset β) (f : α → β)     (x : α) (hx : x ∈ S) (hfx : f x ∈ t x) :     f x ∈ S.biUnion t := by   rw [Finset.mem_biUnion]   exact ⟨x, hx, hfx⟩  Answer with VERDICT: APPROVE or VERDICT: REJECT on the first line, then a terse per-axis faithfulness check, whether it is vacuous or weaker, and any defect. ---------------------------------------------------------------------- MODEL ANSWERED  : google/gemini-3.7-flash tokens          : prompt 291, completion 451 receipt         : C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\evidence\\ask-gemini\\20260903T233003-78e6191a.json ====================================================================== VERDICT: APPROVE  - **Objects**: Faithful representation of finite sets $S$, indexed family of finite sets $t$, assignment function $f$, and element $x$. - **Quantifiers**: Universally quantified across types, sets, functions, and elements as expected. - **Hypotheses**: Faithfully requires $x \\in S$ and $f(x) \\in t(x)$. - **Conclusion**: Faithfully asserts $f(x) \\in \\bigcup_{a \\in S} t(a)$ (`S.biUnion t`). - **Scope**: Matches the standard membership property of bounded/indexed finite unions. - **Definitions**: Uses standard Mathlib `Finset.biUnion` and `Finset.mem`. - **Vacuity/Weakness**: Non-vacuous and exact. ====================================================================== ONE MODEL'S READ. Every number above is a lead to verify, not a fact to quote."
+            ],
+            "reviewer": "gemini-external-court",
+            "verdict": "REJECT"
+          }
+        ],
+        "route": "INFORMAL_RESEARCH"
+      }
+    ],
+    "frozen_answer": null,
+    "status": "CANDIDATE_FOUND"
+  },
+  "final_receipt": null,
+  "kbk_promotions": [],
+  "nodes": {},
+  "problem": {
+    "authority_target": "FULL_FORMALIZATION",
+    "hard_mode": true,
+    "research_policy": {
+      "clean_room": false,
+      "knowledge_cutoff": null,
+      "rule": "Task-specific prior solutions may be consulted if provenance is recorded"
+    },
+    "sources": [],
+    "statement": "assignment_value_in_biUnion",
+    "statement_sha256": "4c77ac9eff8fcda3a308e4d1e09b6d5ea222ff249a53314431ec363ad61f7525"
+  },
+  "root_node": null,
+  "schema": "oracle.frontier-formalizer.v1",
+  "semantic_court": {
+    "accepted_at": null,
+    "accepted_candidate": null,
+    "candidates": {},
+    "min_reviews": 2
+  },
+  "updated_at": "2026-09-03T23:30:03Z"
+}

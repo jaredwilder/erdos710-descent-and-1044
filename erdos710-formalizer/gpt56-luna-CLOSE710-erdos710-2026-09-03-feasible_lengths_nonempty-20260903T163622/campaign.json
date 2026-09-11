@@ -1,0 +1,60 @@
+{
+  "campaign_id": "gpt56-luna-CLOSE710-erdos710-2026-09-03-feasible_lengths_nonempty-20260903T163622",
+  "created_at": "2026-09-03T23:36:22Z",
+  "discovery": {
+    "candidates": [
+      {
+        "actor": "close-driver",
+        "answer": "feasible_lengths_nonempty",
+        "answer_sha256": "46d25228c67fcb1c572bd4a94ab390ac1ec1a0572ddf78444968a8bec270cee7",
+        "at": "2026-09-03T23:36:22Z",
+        "evidence": "python computation + reflection soundness",
+        "falsification": "a counterexample to the stated theorem",
+        "id": "answer-46d25228c67f",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:36:22Z",
+            "attacks": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:36:27Z",
+            "attacks": [
+              "external-court: red P]     (L U : Nat)     (hL : P L)     (hLU : L ≤ U) :     (feasibleLengthsUpTo P U).Nonempty := by   refine ⟨L, ?_⟩   unfold feasibleLengthsUpTo   exact Finset.mem_filter.mpr     ⟨Finset.mem_range.mpr (Nat.lt_succ_of_le hLU), hL⟩  Answer with VERDICT: APPROVE or VERDICT: REJECT on the first line, then a terse per-axis faithfulness check, whether it is vacuous or weaker, and any defect ... [1 more characters] ---------------------------------------------------------------------- MODEL ANSWERED  : google/gemini-3.7-flash tokens          : prompt 342, completion 493 receipt         : C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\evidence\\ask-gemini\\20260903T233627-fa1caae4.json ====================================================================== VERDICT: APPROVE  - Objects: Faithfully formalizes the feasible length set as a filtered finset up to upper bound $U$ with natural number lengths. - Quantifiers: Correct universal quantification over predicate $P$ and bounds $L, U$. - Hypotheses: Correctly assumes existence of a feasible length $L$ satisfying $P(L)$ within the bound $L \\le U$. - Conclusion: Directly states nonemptiness of the resulting finset. - Scope: Exact match for the lemma. - Definitions: `feasibleLengthsUpTo` accurately filters $\\{0, \\dots, U\\}$ by $P$. - Vacuity / Weakness: Non-vacuous, not weakened. ====================================================================== ONE MODEL'S READ. Every number above is a lead to verify, not a fact to quote."
+            ],
+            "reviewer": "gemini-external-court",
+            "verdict": "REJECT"
+          }
+        ],
+        "route": "INFORMAL_RESEARCH"
+      }
+    ],
+    "frozen_answer": null,
+    "status": "CANDIDATE_FOUND"
+  },
+  "final_receipt": null,
+  "kbk_promotions": [],
+  "nodes": {},
+  "problem": {
+    "authority_target": "FULL_FORMALIZATION",
+    "hard_mode": true,
+    "research_policy": {
+      "clean_room": false,
+      "knowledge_cutoff": null,
+      "rule": "Task-specific prior solutions may be consulted if provenance is recorded"
+    },
+    "sources": [],
+    "statement": "feasible_lengths_nonempty",
+    "statement_sha256": "46d25228c67fcb1c572bd4a94ab390ac1ec1a0572ddf78444968a8bec270cee7"
+  },
+  "root_node": null,
+  "schema": "oracle.frontier-formalizer.v1",
+  "semantic_court": {
+    "accepted_at": null,
+    "accepted_candidate": null,
+    "candidates": {},
+    "min_reviews": 2
+  },
+  "updated_at": "2026-09-03T23:36:27Z"
+}

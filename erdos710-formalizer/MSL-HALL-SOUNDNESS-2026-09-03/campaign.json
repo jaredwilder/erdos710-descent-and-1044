@@ -1,0 +1,158 @@
+{
+  "campaign_id": "MSL-HALL-SOUNDNESS-2026-09-03",
+  "created_at": "2026-09-03T20:54:26Z",
+  "discovery": {
+    "candidates": [
+      {
+        "actor": "close-driver",
+        "answer": "The Hall-deficiency certificate is sound: if a witness set S has a neighborhood union smaller than |S|, no injective transversal exists. Proof by counting: an injective transversal's image lies in the neighborhood union and has cardinality |S|, contradicting |neighborhood union| < |S|.",
+        "answer_sha256": "29b24b38d2b359ee1559cf2931937f95a55453cd5b5648a00b349dc57e6b8e18",
+        "at": "2026-09-03T20:54:26Z",
+        "evidence": "python computation + reflection soundness",
+        "falsification": "a counterexample to the stated theorem",
+        "id": "answer-29b24b38d2b3",
+        "reviews": [
+          {
+            "at": "2026-09-03T20:54:26Z",
+            "attacks": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T20:54:26Z",
+            "attacks": [],
+            "reviewer": "close-driver-independent-parse",
+            "verdict": "APPROVE"
+          }
+        ],
+        "route": "INFORMAL_RESEARCH"
+      }
+    ],
+    "frozen_answer": {
+      "answer": "The Hall-deficiency certificate is sound: if a witness set S has a neighborhood union smaller than |S|, no injective transversal exists. Proof by counting: an injective transversal's image lies in the neighborhood union and has cardinality |S|, contradicting |neighborhood union| < |S|.",
+      "answer_sha256": "29b24b38d2b359ee1559cf2931937f95a55453cd5b5648a00b349dc57e6b8e18",
+      "at": "2026-09-03T20:54:26Z",
+      "frozen_at": "2026-09-03T20:54:26Z",
+      "id": "answer-29b24b38d2b3",
+      "route": "INFORMAL_RESEARCH"
+    },
+    "status": "FROZEN"
+  },
+  "final_receipt": {
+    "path": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\MSL-HALL-SOUNDNESS-2026-09-03\\receipts\\FINAL.json",
+    "sha256": "07029506c2d068cee7c55b1ef2beb2bed0ffbf6d2ecada7cfa7833947ae258af"
+  },
+  "kbk_promotions": [],
+  "nodes": {
+    "root": {
+      "attempts": [],
+      "authority_target": "FULL_FORMALIZATION",
+      "blocker": null,
+      "created_at": "2026-09-03T20:54:26Z",
+      "deps": [],
+      "id": "root",
+      "kernel_receipt": {
+        "backend": "wsl",
+        "declarations": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true,
+            "declaration": "hall_deficiency_blocks"
+          }
+        ],
+        "errors": [],
+        "exitCode": 0,
+        "file": "oracle/frontier_formalizer/work/MSL-HALL-SOUNDNESS-2026-09-03/hall_deficiency_blocks.lean",
+        "needsMathlib": true,
+        "project": "/root/erdosfire-bench/proofs",
+        "seconds": 85.2,
+        "status": "VERIFIED"
+      },
+      "kind": "THEOREM",
+      "proof_binding": {
+        "declaration": "hall_deficiency_blocks",
+        "lean_file": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\MSL-HALL-SOUNDNESS-2026-09-03\\hall_deficiency_blocks.lean",
+        "lean_sha256": "a43b4e9ff3ee99a87326fb94eb47ce9cd9080191cc357a3bff41334527ce97ab",
+        "node_statement_sha256": "3b0ad5f3c9b0110927f54d8317fe9574b1da64ee14c215d7e6e63cdbe15751dc"
+      },
+      "route": "FORMAL_WORKER",
+      "source_refs": [],
+      "state": "VERIFIED",
+      "statement": "For any neighborhood map t : iota -> Finset alpha and any witness set S : Finset iota, if S is deficient (the union of neighborhoods of S is strictly smaller than S), then there is no injective transversal of S into its neighborhoods. This is the soundness core of the Hall-deficiency argument: a deficient witness blocks every matching.",
+      "tags": [],
+      "updated_at": "2026-09-03T20:56:10Z"
+    }
+  },
+  "problem": {
+    "authority_target": "FULL_FORMALIZATION",
+    "hard_mode": true,
+    "research_policy": {
+      "clean_room": false,
+      "knowledge_cutoff": null,
+      "rule": "Task-specific prior solutions may be consulted if provenance is recorded"
+    },
+    "sources": [],
+    "statement": "For any neighborhood map t : iota -> Finset alpha and any witness set S : Finset iota, if S is deficient (the union of neighborhoods of S is strictly smaller than S), then there is no injective transversal of S into its neighborhoods. This is the soundness core of the Hall-deficiency argument: a deficient witness blocks every matching.",
+    "statement_sha256": "3b0ad5f3c9b0110927f54d8317fe9574b1da64ee14c215d7e6e63cdbe15751dc"
+  },
+  "root_node": "root",
+  "schema": "oracle.frontier-formalizer.v1",
+  "semantic_court": {
+    "accepted_at": "2026-09-03T20:54:26Z",
+    "accepted_candidate": "answer-29b24b38d2b3",
+    "candidates": {
+      "answer-29b24b38d2b3": {
+        "artifact": null,
+        "created_at": "2026-09-03T20:54:26Z",
+        "creator": "close-driver",
+        "derived_from_answer_sha256": "29b24b38d2b359ee1559cf2931937f95a55453cd5b5648a00b349dc57e6b8e18",
+        "explanation": "The Hall-deficiency certificate is sound: if a witness set S has a neighborhood union smaller than |S|, no injective transversal exists. Proof by counting: an injective transversal's image lies in the neighborhood union and has cardinality |S|, contradicting |neighborhood union| < |S|.",
+        "id": "answer-29b24b38d2b3",
+        "lean_statement": "For any neighborhood map t : iota -> Finset alpha and any witness set S : Finset iota, if S is deficient (the union of neighborhoods of S is strictly smaller than S), then there is no injective transversal of S into its neighborhoods. This is the soundness core of the Hall-deficiency argument: a deficient witness blocks every matching.",
+        "reviews": [
+          {
+            "at": "2026-09-03T20:54:26Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T20:54:26Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "close-driver-independent-parse",
+            "verdict": "APPROVE"
+          }
+        ],
+        "source_alignment": [
+          {
+            "lean": "hall_deficiency_blocks",
+            "source": "contract"
+          }
+        ],
+        "statement_sha256": "3b0ad5f3c9b0110927f54d8317fe9574b1da64ee14c215d7e6e63cdbe15751dc"
+      }
+    },
+    "min_reviews": 2
+  },
+  "updated_at": "2026-09-03T20:56:10Z"
+}

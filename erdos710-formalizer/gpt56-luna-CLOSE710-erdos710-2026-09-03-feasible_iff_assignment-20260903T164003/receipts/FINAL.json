@@ -1,0 +1,25 @@
+{
+  "accepted_target_id": "answer-a168d566339a",
+  "accepted_target_sha256": "a168d566339a22636f0620a98245196f95fcabbed9dee82e8e0e4815981a855f",
+  "authority": "FULL_FORMALIZATION",
+  "campaign_id": "gpt56-luna-CLOSE710-erdos710-2026-09-03-feasible_iff_assignment-20260903T164003",
+  "campaign_state_hash": "d8190346c7aa539d8ba202e6dd01a2a144769fc9117da22eab37ffa3b132bb3f",
+  "closed_at": "2026-09-03T23:42:17Z",
+  "frozen_answer_sha256": "a168d566339a22636f0620a98245196f95fcabbed9dee82e8e0e4815981a855f",
+  "hard_mode": true,
+  "kbk_promotions": [],
+  "kernel_receipt_hash": "7177fcbc6c1e92ae8527aa985e1219ec67d5971a3cd3eb0c2f096a7b97fd363e",
+  "problem_statement_sha256": "a168d566339a22636f0620a98245196f95fcabbed9dee82e8e0e4815981a855f",
+  "receipt_sha256": "a2b56e465aa2fe1e31efc7a648fde242c4856b41f8b18c9ab088eefd0f5a0fde",
+  "root_declaration": "feasible_iff_assignment",
+  "root_lean_file": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\gpt56-luna-CLOSE710-erdos710-2026-09-03-feasible_iff_assignment-20260903T164003\\feasible_iff_assignment.lean",
+  "root_lean_sha256": "d31097f064551eab59a6caba387246848314eb5f6501c03b36d7c6a1f111192a",
+  "root_node": "root",
+  "root_state": "VERIFIED",
+  "schema": "oracle.frontier-formalizer.final-receipt.v1",
+  "semantic_reviewers": [
+    "close-driver-structural",
+    "gemini-external-court"
+  ],
+  "source_hashes": []
+}

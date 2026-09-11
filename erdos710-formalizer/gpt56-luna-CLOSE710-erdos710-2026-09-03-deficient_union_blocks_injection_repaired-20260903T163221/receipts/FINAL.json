@@ -1,0 +1,25 @@
+{
+  "accepted_target_id": "answer-6f568fefdc0b",
+  "accepted_target_sha256": "6f568fefdc0b25bef18cb6f2e6f455353f771c49423e3f9d45f605bdecdc3b21",
+  "authority": "FULL_FORMALIZATION",
+  "campaign_id": "gpt56-luna-CLOSE710-erdos710-2026-09-03-deficient_union_blocks_injection_repaired-20260903T163221",
+  "campaign_state_hash": "ff51f49594baa810126975b4b4b4ec3b5e5c09cc0bddd2440d8cb2ddd67627eb",
+  "closed_at": "2026-09-03T23:33:34Z",
+  "frozen_answer_sha256": "6f568fefdc0b25bef18cb6f2e6f455353f771c49423e3f9d45f605bdecdc3b21",
+  "hard_mode": true,
+  "kbk_promotions": [],
+  "kernel_receipt_hash": "f537cd8e9ff8f5c543c60676343de6d372c95cd6209a6443bcb56ea415778ee2",
+  "problem_statement_sha256": "6f568fefdc0b25bef18cb6f2e6f455353f771c49423e3f9d45f605bdecdc3b21",
+  "receipt_sha256": "e1ad3a7e0fbbcbcf63aaebb40acc78d8b91d9c70ad884fb00da7715432dc6f96",
+  "root_declaration": "deficient_union_blocks_injection_repaired",
+  "root_lean_file": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\gpt56-luna-CLOSE710-erdos710-2026-09-03-deficient_union_blocks_injection_repaired-20260903T163221\\deficient_union_blocks_injection_repaired.lean",
+  "root_lean_sha256": "0ea9bf11bda796c931aadace6efa714726bc71029b27a03760a73d23a76af216",
+  "root_node": "root",
+  "root_state": "VERIFIED",
+  "schema": "oracle.frontier-formalizer.final-receipt.v1",
+  "semantic_reviewers": [
+    "close-driver-structural",
+    "gemini-external-court"
+  ],
+  "source_hashes": []
+}

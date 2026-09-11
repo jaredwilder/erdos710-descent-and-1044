@@ -1,0 +1,25 @@
+{
+  "accepted_target_id": "answer-29b24b38d2b3",
+  "accepted_target_sha256": "3b0ad5f3c9b0110927f54d8317fe9574b1da64ee14c215d7e6e63cdbe15751dc",
+  "authority": "FULL_FORMALIZATION",
+  "campaign_id": "MSL-HALL-SOUNDNESS-2026-09-03",
+  "campaign_state_hash": "c8a159b14dcafd76757d9138aff82f9b8c79c474525f09423521fe4d3eb97ad3",
+  "closed_at": "2026-09-03T20:56:10Z",
+  "frozen_answer_sha256": "29b24b38d2b359ee1559cf2931937f95a55453cd5b5648a00b349dc57e6b8e18",
+  "hard_mode": true,
+  "kbk_promotions": [],
+  "kernel_receipt_hash": "84c603dfa852704f6146ce606d957fdc7869f3752c901aed1ef609c4eba62430",
+  "problem_statement_sha256": "3b0ad5f3c9b0110927f54d8317fe9574b1da64ee14c215d7e6e63cdbe15751dc",
+  "receipt_sha256": "13625278704e2c09e7f34640ac5a6cad7869ef20f8a5e3e6ee493efd7924134e",
+  "root_declaration": "hall_deficiency_blocks",
+  "root_lean_file": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\MSL-HALL-SOUNDNESS-2026-09-03\\hall_deficiency_blocks.lean",
+  "root_lean_sha256": "a43b4e9ff3ee99a87326fb94eb47ce9cd9080191cc357a3bff41334527ce97ab",
+  "root_node": "root",
+  "root_state": "VERIFIED",
+  "schema": "oracle.frontier-formalizer.final-receipt.v1",
+  "semantic_reviewers": [
+    "close-driver-independent-parse",
+    "close-driver-structural"
+  ],
+  "source_hashes": []
+}

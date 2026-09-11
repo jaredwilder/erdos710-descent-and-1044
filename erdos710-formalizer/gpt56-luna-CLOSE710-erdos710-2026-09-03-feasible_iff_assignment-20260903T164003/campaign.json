@@ -1,0 +1,158 @@
+{
+  "campaign_id": "gpt56-luna-CLOSE710-erdos710-2026-09-03-feasible_iff_assignment-20260903T164003",
+  "created_at": "2026-09-03T23:40:03Z",
+  "discovery": {
+    "candidates": [
+      {
+        "actor": "close-driver",
+        "answer": "feasible_iff_assignment",
+        "answer_sha256": "a168d566339a22636f0620a98245196f95fcabbed9dee82e8e0e4815981a855f",
+        "at": "2026-09-03T23:40:03Z",
+        "evidence": "python computation + reflection soundness",
+        "falsification": "a counterexample to the stated theorem",
+        "id": "answer-a168d566339a",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:40:03Z",
+            "attacks": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:40:09Z",
+            "attacks": [],
+            "reviewer": "gemini-external-court",
+            "verdict": "APPROVE"
+          }
+        ],
+        "route": "INFORMAL_RESEARCH"
+      }
+    ],
+    "frozen_answer": {
+      "answer": "feasible_iff_assignment",
+      "answer_sha256": "a168d566339a22636f0620a98245196f95fcabbed9dee82e8e0e4815981a855f",
+      "at": "2026-09-03T23:40:03Z",
+      "frozen_at": "2026-09-03T23:40:09Z",
+      "id": "answer-a168d566339a",
+      "route": "INFORMAL_RESEARCH"
+    },
+    "status": "FROZEN"
+  },
+  "final_receipt": {
+    "path": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\gpt56-luna-CLOSE710-erdos710-2026-09-03-feasible_iff_assignment-20260903T164003\\receipts\\FINAL.json",
+    "sha256": "bd4af5e5f5a554ecd13eb095db496da9faccb547b4e950fd92999196300a2b09"
+  },
+  "kbk_promotions": [],
+  "nodes": {
+    "root": {
+      "attempts": [],
+      "authority_target": "FULL_FORMALIZATION",
+      "blocker": null,
+      "created_at": "2026-09-03T23:40:14Z",
+      "deps": [],
+      "id": "root",
+      "kernel_receipt": {
+        "backend": "wsl",
+        "declarations": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true,
+            "declaration": "feasible_iff_assignment"
+          }
+        ],
+        "errors": [],
+        "exitCode": 0,
+        "file": "oracle/frontier_formalizer/work/gpt56-luna-CLOSE710-erdos710-2026-09-03-feasible_iff_assignment-20260903T164003/feasible_iff_assignment.lean",
+        "needsMathlib": true,
+        "project": "/root/erdosfire-bench/proofs",
+        "seconds": 110.4,
+        "status": "VERIFIED"
+      },
+      "kind": "THEOREM",
+      "proof_binding": {
+        "declaration": "feasible_iff_assignment",
+        "lean_file": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\gpt56-luna-CLOSE710-erdos710-2026-09-03-feasible_iff_assignment-20260903T164003\\feasible_iff_assignment.lean",
+        "lean_sha256": "d31097f064551eab59a6caba387246848314eb5f6501c03b36d7c6a1f111192a",
+        "node_statement_sha256": "a168d566339a22636f0620a98245196f95fcabbed9dee82e8e0e4815981a855f"
+      },
+      "route": "FORMAL_WORKER",
+      "source_refs": [],
+      "state": "VERIFIED",
+      "statement": "feasible_iff_assignment",
+      "tags": [],
+      "updated_at": "2026-09-03T23:42:17Z"
+    }
+  },
+  "problem": {
+    "authority_target": "FULL_FORMALIZATION",
+    "hard_mode": true,
+    "research_policy": {
+      "clean_room": false,
+      "knowledge_cutoff": null,
+      "rule": "Task-specific prior solutions may be consulted if provenance is recorded"
+    },
+    "sources": [],
+    "statement": "feasible_iff_assignment",
+    "statement_sha256": "a168d566339a22636f0620a98245196f95fcabbed9dee82e8e0e4815981a855f"
+  },
+  "root_node": "root",
+  "schema": "oracle.frontier-formalizer.v1",
+  "semantic_court": {
+    "accepted_at": "2026-09-03T23:40:14Z",
+    "accepted_candidate": "answer-a168d566339a",
+    "candidates": {
+      "answer-a168d566339a": {
+        "artifact": null,
+        "created_at": "2026-09-03T23:40:09Z",
+        "creator": "close-driver",
+        "derived_from_answer_sha256": "a168d566339a22636f0620a98245196f95fcabbed9dee82e8e0e4815981a855f",
+        "explanation": "feasible_iff_assignment",
+        "id": "answer-a168d566339a",
+        "lean_statement": "feasible_iff_assignment",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:40:09Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:40:14Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "gemini-external-court",
+            "verdict": "APPROVE"
+          }
+        ],
+        "source_alignment": [
+          {
+            "lean": "feasible_iff_assignment",
+            "source": "contract"
+          }
+        ],
+        "statement_sha256": "a168d566339a22636f0620a98245196f95fcabbed9dee82e8e0e4815981a855f"
+      }
+    },
+    "min_reviews": 2
+  },
+  "updated_at": "2026-09-03T23:42:18Z"
+}

@@ -1,0 +1,158 @@
+{
+  "campaign_id": "gpt56-luna-CLOSE710-erdos710-2026-09-03-deficient_union_blocks_injection_repaired-20260903T163221",
+  "created_at": "2026-09-03T23:32:21Z",
+  "discovery": {
+    "candidates": [
+      {
+        "actor": "close-driver",
+        "answer": "deficient_union_blocks_injection_repaired",
+        "answer_sha256": "6f568fefdc0b25bef18cb6f2e6f455353f771c49423e3f9d45f605bdecdc3b21",
+        "at": "2026-09-03T23:32:21Z",
+        "evidence": "python computation + reflection soundness",
+        "falsification": "a counterexample to the stated theorem",
+        "id": "answer-6f568fefdc0b",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:32:21Z",
+            "attacks": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:32:28Z",
+            "attacks": [],
+            "reviewer": "gemini-external-court",
+            "verdict": "APPROVE"
+          }
+        ],
+        "route": "INFORMAL_RESEARCH"
+      }
+    ],
+    "frozen_answer": {
+      "answer": "deficient_union_blocks_injection_repaired",
+      "answer_sha256": "6f568fefdc0b25bef18cb6f2e6f455353f771c49423e3f9d45f605bdecdc3b21",
+      "at": "2026-09-03T23:32:21Z",
+      "frozen_at": "2026-09-03T23:32:28Z",
+      "id": "answer-6f568fefdc0b",
+      "route": "INFORMAL_RESEARCH"
+    },
+    "status": "FROZEN"
+  },
+  "final_receipt": {
+    "path": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\gpt56-luna-CLOSE710-erdos710-2026-09-03-deficient_union_blocks_injection_repaired-20260903T163221\\receipts\\FINAL.json",
+    "sha256": "72585fba7eee63e995c4b3961adb852fe5905f4d185df722cfc14e9b0b8c3242"
+  },
+  "kbk_promotions": [],
+  "nodes": {
+    "root": {
+      "attempts": [],
+      "authority_target": "FULL_FORMALIZATION",
+      "blocker": null,
+      "created_at": "2026-09-03T23:32:35Z",
+      "deps": [],
+      "id": "root",
+      "kernel_receipt": {
+        "backend": "wsl",
+        "declarations": [
+          {
+            "axioms": [
+              "propext",
+              "Classical.choice",
+              "Quot.sound"
+            ],
+            "clean": true,
+            "declaration": "deficient_union_blocks_injection_repaired"
+          }
+        ],
+        "errors": [],
+        "exitCode": 0,
+        "file": "oracle/frontier_formalizer/work/gpt56-luna-CLOSE710-erdos710-2026-09-03-deficient_union_blocks_injection_repaired-20260903T163221/deficient_union_blocks_injection_repaired.lean",
+        "needsMathlib": true,
+        "project": "/root/erdosfire-bench/proofs",
+        "seconds": 46.8,
+        "status": "VERIFIED"
+      },
+      "kind": "THEOREM",
+      "proof_binding": {
+        "declaration": "deficient_union_blocks_injection_repaired",
+        "lean_file": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\gpt56-luna-CLOSE710-erdos710-2026-09-03-deficient_union_blocks_injection_repaired-20260903T163221\\deficient_union_blocks_injection_repaired.lean",
+        "lean_sha256": "0ea9bf11bda796c931aadace6efa714726bc71029b27a03760a73d23a76af216",
+        "node_statement_sha256": "6f568fefdc0b25bef18cb6f2e6f455353f771c49423e3f9d45f605bdecdc3b21"
+      },
+      "route": "FORMAL_WORKER",
+      "source_refs": [],
+      "state": "VERIFIED",
+      "statement": "deficient_union_blocks_injection_repaired",
+      "tags": [],
+      "updated_at": "2026-09-03T23:33:34Z"
+    }
+  },
+  "problem": {
+    "authority_target": "FULL_FORMALIZATION",
+    "hard_mode": true,
+    "research_policy": {
+      "clean_room": false,
+      "knowledge_cutoff": null,
+      "rule": "Task-specific prior solutions may be consulted if provenance is recorded"
+    },
+    "sources": [],
+    "statement": "deficient_union_blocks_injection_repaired",
+    "statement_sha256": "6f568fefdc0b25bef18cb6f2e6f455353f771c49423e3f9d45f605bdecdc3b21"
+  },
+  "root_node": "root",
+  "schema": "oracle.frontier-formalizer.v1",
+  "semantic_court": {
+    "accepted_at": "2026-09-03T23:32:35Z",
+    "accepted_candidate": "answer-6f568fefdc0b",
+    "candidates": {
+      "answer-6f568fefdc0b": {
+        "artifact": null,
+        "created_at": "2026-09-03T23:32:28Z",
+        "creator": "close-driver",
+        "derived_from_answer_sha256": "6f568fefdc0b25bef18cb6f2e6f455353f771c49423e3f9d45f605bdecdc3b21",
+        "explanation": "deficient_union_blocks_injection_repaired",
+        "id": "answer-6f568fefdc0b",
+        "lean_statement": "deficient_union_blocks_injection_repaired",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:32:28Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:32:35Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "gemini-external-court",
+            "verdict": "APPROVE"
+          }
+        ],
+        "source_alignment": [
+          {
+            "lean": "deficient_union_blocks_injection_repaired",
+            "source": "contract"
+          }
+        ],
+        "statement_sha256": "6f568fefdc0b25bef18cb6f2e6f455353f771c49423e3f9d45f605bdecdc3b21"
+      }
+    },
+    "min_reviews": 2
+  },
+  "updated_at": "2026-09-03T23:33:34Z"
+}

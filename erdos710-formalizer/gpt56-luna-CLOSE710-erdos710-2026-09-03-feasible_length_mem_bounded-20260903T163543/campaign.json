@@ -1,0 +1,60 @@
+{
+  "campaign_id": "gpt56-luna-CLOSE710-erdos710-2026-09-03-feasible_length_mem_bounded-20260903T163543",
+  "created_at": "2026-09-03T23:35:44Z",
+  "discovery": {
+    "candidates": [
+      {
+        "actor": "close-driver",
+        "answer": "feasible_length_mem_bounded",
+        "answer_sha256": "2c63931d52817c516fa2267144d54f47b0ee2f7c411c402dc6d52941ca92fbdf",
+        "at": "2026-09-03T23:35:44Z",
+        "evidence": "python computation + reflection soundness",
+        "falsification": "a counterexample to the stated theorem",
+        "id": "answer-2c63931d5281",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:35:44Z",
+            "attacks": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:35:48Z",
+            "attacks": [
+              "external-court:  theorem feasible_length_mem_bounded     (P : Nat → Prop)     [DecidablePred P]     (L U : Nat)     (hL : P L)     (hLU : L ≤ U) :     L ∈ feasibleLengthsUpTo P U := by   apply Finset.mem_filter.mpr   constructor   · exact Finset.mem_range.mpr (Nat.lt_succ_of_le hLU)   · exact hL  Answer with VERDICT: APPROVE or VERDICT: REJECT on the first line, then a terse per-axis faithfulne ... [58 more characters] ---------------------------------------------------------------------- MODEL ANSWERED  : google/gemini-3.7-flash tokens          : prompt 361, completion 465 receipt         : C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\evidence\\ask-gemini\\20260903T233548-fbe2feeb.json ====================================================================== VERDICT: APPROVE  - Objects: Predicate $P : \\mathbb{N} \\to \\text{Prop}$, bounds $L, U \\in \\mathbb{N}$ correctly represent length and upper bound. - Quantifiers: Generic across all $P$, $L$, and $U$. - Hypotheses: Faithfully captures that $L$ satisfies feasibility predicate $P$ and is bounded ($L \\le U$). - Conclusion: Faithfully asserts membership $L \\in \\text{feasibleLengthsUpTo } P\\ U$. - Scope: Exact match for the bounded feasibility filter claim. - Definitions: `feasibleLengthsUpTo` standardly filters $\\{0, \\dots, U\\}$ by predicate $P$. - Vacuity/Weakness: Non-vacuous and exact. ====================================================================== ONE MODEL'S READ. Every number above is a lead to verify, not a fact to quote."
+            ],
+            "reviewer": "gemini-external-court",
+            "verdict": "REJECT"
+          }
+        ],
+        "route": "INFORMAL_RESEARCH"
+      }
+    ],
+    "frozen_answer": null,
+    "status": "CANDIDATE_FOUND"
+  },
+  "final_receipt": null,
+  "kbk_promotions": [],
+  "nodes": {},
+  "problem": {
+    "authority_target": "FULL_FORMALIZATION",
+    "hard_mode": true,
+    "research_policy": {
+      "clean_room": false,
+      "knowledge_cutoff": null,
+      "rule": "Task-specific prior solutions may be consulted if provenance is recorded"
+    },
+    "sources": [],
+    "statement": "feasible_length_mem_bounded",
+    "statement_sha256": "2c63931d52817c516fa2267144d54f47b0ee2f7c411c402dc6d52941ca92fbdf"
+  },
+  "root_node": null,
+  "schema": "oracle.frontier-formalizer.v1",
+  "semantic_court": {
+    "accepted_at": null,
+    "accepted_candidate": null,
+    "candidates": {},
+    "min_reviews": 2
+  },
+  "updated_at": "2026-09-03T23:35:48Z"
+}

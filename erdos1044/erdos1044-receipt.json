@@ -1,0 +1,533 @@
+{
+ "schemaVersion": "oracle.erdos1044-lambda.v1",
+ "problem": "Erdos Problem #1044 [EHP58] \u2014 infimum of Lambda(f), f monic with all roots in the closed unit disc, Lambda(f) = max boundary length of a connected component of {|f| < 1}",
+ "external_resolution": "Tang (2026): inf_f Lambda(f) = 2 over all degrees, not attained. Upper bound from z^n - 1; lower bound Lambda(f) > 2 from Pommerenke [Po61, Thm 3] + length >= 2*diam. Lean formalisation by L. Luccioli. NOT re-proved here.",
+ "what_this_run_is": "bounded numerical verification + a closed form for the extremal family + a fixed-degree search. Not a proof.",
+ "seed": 10442026,
+ "grids": {
+  "fine": 2001,
+  "search": 601,
+  "refine": 1501
+ },
+ "A_calibration": {
+  "exact_2pi": 6.283185307179586,
+  "by_grid": {
+   "501": {
+    "Lambda": 6.28318771102001,
+    "abs_err": 2.4038404236037536e-06,
+    "n_components": 1,
+    "diam": 2.0000088704614645
+   },
+   "1001": {
+    "Lambda": 6.2831859028906765,
+    "abs_err": 5.957110902343743e-07,
+    "n_components": 1,
+    "diam": 2.0000022271180393
+   },
+   "2001": {
+    "Lambda": 6.283185449428216,
+    "abs_err": 1.4224862976419672e-07,
+    "n_components": 1,
+    "diam": 2.0000005550579645
+   }
+  },
+  "verdict": "PASS",
+  "seconds": 1.07
+ },
+ "B_closed_form_upper_family": {
+  "closed_form": {
+   "1": 6.283185307179585,
+   "2": 3.708149354602744,
+   "3": 3.059908074114386,
+   "4": 2.7675051293141517,
+   "5": 2.601362276383738,
+   "8": 2.364444142035781,
+   "16": 2.1776670177707507,
+   "32": 2.087727669303334,
+   "100": 2.0278361711017916,
+   "1000": 2.0027736884162204,
+   "100000": 2.0000277259971577,
+   "10000000": 2.0000002772588834
+  },
+  "monotone_decreasing": true,
+  "all_strictly_above_2": true,
+  "limit_at_n_1e7": 2.0000002772588834,
+  "grid_cross_check": {
+   "1": {
+    "grid": 6.28318544998172,
+    "closed_form": 6.283185307179585,
+    "abs_diff": 1.4280213456174806e-07,
+    "n_components": 1
+   },
+   "2": {
+    "grid": 3.7092225656401285,
+    "closed_form": 3.708149354602744,
+    "abs_diff": 0.0010732110373843362,
+    "n_components": 2
+   },
+   "3": {
+    "grid": 3.0596442113265607,
+    "closed_form": 3.059908074114386,
+    "abs_diff": 0.00026386278782508654,
+    "n_components": 3
+   }
+  },
+  "asymptotic_n_times_excess": [
+   2.7726986602338854,
+   2.7725997157723725,
+   2.7725898212871414,
+   2.772588834076828
+  ],
+  "four_ln2": 2.772588722239781,
+  "asymptotic_matches_4ln2": true,
+  "verdict": "PASS",
+  "seconds": 2.47
+ },
+ "C_lower_bound_admissible": {
+  "per_degree": {
+   "2": {
+    "n": 160,
+    "min": 6.283186695877816,
+    "median": 6.321664846964615
+   },
+   "3": {
+    "n": 160,
+    "min": 4.689082815192385,
+    "median": 6.326364310371995
+   },
+   "4": {
+    "n": 160,
+    "min": 3.969634046251037,
+    "median": 6.340633281714174
+   },
+   "5": {
+    "n": 160,
+    "min": 4.359144452183644,
+    "median": 6.316173627433848
+   },
+   "7": {
+    "n": 160,
+    "min": 3.683117945598211,
+    "median": 6.330542152991532
+   },
+   "10": {
+    "n": 160,
+    "min": 3.661852180733732,
+    "median": 6.3143041139006755
+   },
+   "15": {
+    "n": 160,
+    "min": 3.5640171682828825,
+    "median": 6.32576200672826
+   },
+   "25": {
+    "n": 160,
+    "min": 4.381497297089585,
+    "median": 6.335775568731849
+   }
+  },
+  "global_min_Lambda_search_grid": 3.5640171682828825,
+  "global_min_degree": 15,
+  "global_min_components": 8,
+  "global_min_reverified_at_grid_1501": 3.5640093286807666,
+  "global_min_roots": [
+   [
+    0.2515898607631872,
+    -0.9678339433813841
+   ],
+   [
+    -0.9369338161235212,
+    -0.3495068299822132
+   ],
+   [
+    -0.4123383032685428,
+    -0.9110308028039552
+   ],
+   [
+    -0.5538833275716036,
+    -0.8325942946226618
+   ],
+   [
+    0.9975605778031637,
+    0.06980611443862378
+   ],
+   [
+    -0.8931116774879742,
+    0.4498350047902196
+   ],
+   [
+    -0.039447963244155504,
+    0.9992216261650304
+   ],
+   [
+    0.3767486459001081,
+    0.9263155282151082
+   ],
+   [
+    0.6178199962205922,
+    -0.7863195611645353
+   ],
+   [
+    0.10416242157700575,
+    0.9945602997964549
+   ],
+   [
+    -0.9998822975959448,
+    -0.015342455939465921
+   ],
+   [
+    0.36840903907985895,
+    -0.9296637994050618
+   ],
+   [
+    0.29513671451796486,
+    0.9554550328212947
+   ],
+   [
+    0.9305612693251667,
+    0.36613620967057414
+   ],
+   [
+    -0.05828799595490158,
+    0.9982998094398102
+   ]
+  ],
+  "all_max_abs_root": 1.0000000000000002,
+  "verdict": "PASS",
+  "seconds": 155.86
+ },
+ "D_negative_control": {
+  "configs": {
+   "roots_pm_2": {
+    "Lambda": 1.5771141342553363,
+    "n_components": 2,
+    "max_abs_root": 2.0,
+    "breaks_floor": true
+   },
+   "roots_pm_4": {
+    "Lambda": 0.7856704097707425,
+    "n_components": 2,
+    "max_abs_root": 4.0,
+    "breaks_floor": true
+   },
+   "roots_pm_8": {
+    "Lambda": 0.3937837130661939,
+    "n_components": 2,
+    "max_abs_root": 8.0,
+    "breaks_floor": true
+   },
+   "roots_pm_20": {
+    "Lambda": 0.044922048608786694,
+    "n_components": 1,
+    "max_abs_root": 20.0,
+    "breaks_floor": true
+   }
+  },
+  "some_config_breaks_floor": true,
+  "verdict": "PASS",
+  "seconds": 0.2
+ },
+ "E_length_ge_2diam": {
+  "components_tested": 151,
+  "min_length_over_2diam": 1.252004903274411,
+  "violations": [],
+  "n_violations": 0,
+  "verdict": "PASS",
+  "seconds": 15.88
+ },
+ "F2_degree2_positive_control": {
+  "family": "both roots on the unit circle, angle gauge-fixed at 0",
+  "mesh": 720,
+  "scan_grid": 401,
+  "configurations": 719,
+  "argmin_angle_over_pi": 1.0,
+  "argmin_Lambda_scan": 3.713506083424756,
+  "argmin_Lambda_grid_1501": 3.709580358659833,
+  "z2_minus_1_exact": 3.708149354602744,
+  "z2_minus_1_grid_1501": 3.709580358659832,
+  "second_best_angle_over_pi": 1.9916666666666667,
+  "second_best_Lambda": 6.283187647513937,
+  "reproduces_proven_minimiser": true,
+  "verdict": "PASS",
+  "seconds": 26.83
+ },
+ "F3_degree3_open_case": {
+  "family": "all three roots on the unit circle, angle gauge-fixed at 0",
+  "mesh": 120,
+  "scan_grid": 401,
+  "configurations": 7021,
+  "argmin_angles_over_pi": [
+   0.0,
+   0.6666666666666666,
+   1.3333333333333333
+  ],
+  "argmin_is_cube_roots_of_unity": true,
+  "z3_minus_1_exact": 3.059908074114386,
+  "z3_minus_1_scan_grid": 3.058585866194798,
+  "z3_minus_1_grid_1501": 3.05955612278912,
+  "top_candidates": [
+   {
+    "angles_over_pi": [
+     0.0,
+     0.666667,
+     1.333333
+    ],
+    "Lambda_scan": 3.058585866194798,
+    "Lambda_grid_1501": 3.05955612278912,
+    "n_components": 3
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.033333,
+     1.016667
+    ],
+    "Lambda_scan": 4.687467997845299,
+    "Lambda_grid_1501": 4.6874516366830505,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.983333,
+     1.966667
+    ],
+    "Lambda_scan": 4.687470986087249,
+    "Lambda_grid_1501": 4.687451726159749,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.983333,
+     1.016667
+    ],
+    "Lambda_scan": 4.6874737820855525,
+    "Lambda_grid_1501": 4.687451750326248,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.016667,
+     1.016667
+    ],
+    "Lambda_scan": 4.687501932304648,
+    "Lambda_grid_1501": 4.687485056797072,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.016667,
+     1.0
+    ],
+    "Lambda_scan": 4.687504198213991,
+    "Lambda_grid_1501": 4.687485098239036,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     1.0,
+     1.983333
+    ],
+    "Lambda_scan": 4.687504430990085,
+    "Lambda_grid_1501": 4.687485107112564,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     1.0,
+     1.016667
+    ],
+    "Lambda_scan": 4.6875048977245175,
+    "Lambda_grid_1501": 4.6874850912156,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.983333,
+     1.983333
+    ],
+    "Lambda_scan": 4.687505047129663,
+    "Lambda_grid_1501": 4.687484933461697,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.983333,
+     1.0
+    ],
+    "Lambda_scan": 4.687505958935743,
+    "Lambda_grid_1501": 4.687485059828544,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.05,
+     1.033333
+    ],
+    "Lambda_scan": 4.688342692942177,
+    "Lambda_grid_1501": 4.68832389745337,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.966667,
+     1.95
+    ],
+    "Lambda_scan": 4.688343177359137,
+    "Lambda_grid_1501": 4.6883238514556265,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.983333,
+     1.033333
+    ],
+    "Lambda_scan": 4.688344374380241,
+    "Lambda_grid_1501": 4.688323917934367,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.983333,
+     1.95
+    ],
+    "Lambda_scan": 4.688345171849598,
+    "Lambda_grid_1501": 4.688323869264161,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.05,
+     1.016667
+    ],
+    "Lambda_scan": 4.6883453099623065,
+    "Lambda_grid_1501": 4.6883238291772305,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.966667,
+     1.016667
+    ],
+    "Lambda_scan": 4.688346145853296,
+    "Lambda_grid_1501": 4.688323937530302,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.966667,
+     1.933333
+    ],
+    "Lambda_scan": 4.68878914080605,
+    "Lambda_grid_1501": 4.688769847767413,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.066667,
+     1.033333
+    ],
+    "Lambda_scan": 4.688790245952354,
+    "Lambda_grid_1501": 4.688769659048197,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.966667,
+     1.033333
+    ],
+    "Lambda_scan": 4.688792515395719,
+    "Lambda_grid_1501": 4.688769969953813,
+    "n_components": 2
+   },
+   {
+    "angles_over_pi": [
+     0.0,
+     0.033333,
+     1.033333
+    ],
+    "Lambda_scan": 4.688828286198563,
+    "Lambda_grid_1501": 4.688813172664765,
+    "n_components": 2
+   }
+  ],
+  "anything_beats_z3_minus_1": false,
+  "verdict": "z^3-1 IS the scan minimiser \u2014 numerical support, NOT a proof",
+  "seconds": 309.21
+ },
+ "F3_degree3_interior_probe": {
+  "radial_pull_of_one_root": [
+   {
+    "pulled_root_radius": 0.99,
+    "Lambda": 8.242102486536764,
+    "n_components": 1
+   },
+   {
+    "pulled_root_radius": 0.95,
+    "Lambda": 7.655062457356066,
+    "n_components": 1
+   },
+   {
+    "pulled_root_radius": 0.9,
+    "Lambda": 7.337623303701747,
+    "n_components": 1
+   },
+   {
+    "pulled_root_radius": 0.75,
+    "Lambda": 6.894145775548306,
+    "n_components": 1
+   },
+   {
+    "pulled_root_radius": 0.5,
+    "Lambda": 6.597058860909537,
+    "n_components": 1
+   },
+   {
+    "pulled_root_radius": 0.25,
+    "Lambda": 6.471008541025343,
+    "n_components": 1
+   },
+   {
+    "pulled_root_radius": 0.0,
+    "Lambda": 6.413684564428172,
+    "n_components": 1
+   }
+  ],
+  "random_interior_probes": 300,
+  "best_random_interior_Lambda_grid_1501": 6.2833582357358395,
+  "best_random_interior_components": 1,
+  "best_random_interior_max_abs_root": 0.9105536961798275,
+  "z3_minus_1_grid_1501": 3.05955612278912,
+  "interior_ever_beats_circle": false,
+  "verdict": "PASS \u2014 moving off the circle only increases Lambda",
+  "seconds": 41.7
+ },
+ "elapsed_seconds": 553.22,
+ "all_verdicts": {
+  "A_calibration": "PASS",
+  "B_closed_form_upper_family": "PASS",
+  "C_lower_bound_admissible": "PASS",
+  "D_negative_control": "PASS",
+  "E_length_ge_2diam": "PASS",
+  "F2_degree2_positive_control": "PASS",
+  "F3_degree3_open_case": "z^3-1 IS the scan minimiser \u2014 numerical support, NOT a proof",
+  "F3_degree3_interior_probe": "PASS \u2014 moving off the circle only increases Lambda"
+ },
+ "resultSha256": "a2e600b2205538acb1e92d10c1eaa6ed369582a2bea907a4d599207401af6f91"
+}

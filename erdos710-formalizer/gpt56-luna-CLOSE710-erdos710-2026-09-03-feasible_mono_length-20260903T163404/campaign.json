@@ -1,0 +1,129 @@
+{
+  "campaign_id": "gpt56-luna-CLOSE710-erdos710-2026-09-03-feasible_mono_length-20260903T163404",
+  "created_at": "2026-09-03T23:34:04Z",
+  "discovery": {
+    "candidates": [
+      {
+        "actor": "close-driver",
+        "answer": "feasible_mono_length",
+        "answer_sha256": "5323dabeaf73afb9f68ce77d9f76fed0ca3b22f80105972e5bd40f170379369a",
+        "at": "2026-09-03T23:34:04Z",
+        "evidence": "python computation + reflection soundness",
+        "falsification": "a counterexample to the stated theorem",
+        "id": "answer-5323dabeaf73",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:34:04Z",
+            "attacks": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:34:08Z",
+            "attacks": [],
+            "reviewer": "gemini-external-court",
+            "verdict": "APPROVE"
+          }
+        ],
+        "route": "INFORMAL_RESEARCH"
+      }
+    ],
+    "frozen_answer": {
+      "answer": "feasible_mono_length",
+      "answer_sha256": "5323dabeaf73afb9f68ce77d9f76fed0ca3b22f80105972e5bd40f170379369a",
+      "at": "2026-09-03T23:34:04Z",
+      "frozen_at": "2026-09-03T23:34:08Z",
+      "id": "answer-5323dabeaf73",
+      "route": "INFORMAL_RESEARCH"
+    },
+    "status": "FROZEN"
+  },
+  "final_receipt": null,
+  "kbk_promotions": [],
+  "nodes": {
+    "root": {
+      "attempts": [],
+      "authority_target": "FULL_FORMALIZATION",
+      "blocker": null,
+      "created_at": "2026-09-03T23:34:14Z",
+      "deps": [],
+      "id": "root",
+      "kernel_receipt": null,
+      "kind": "THEOREM",
+      "route": "FORMAL_WORKER",
+      "source_refs": [],
+      "state": "READY",
+      "statement": "feasible_mono_length",
+      "tags": [],
+      "updated_at": "2026-09-03T23:34:14Z"
+    }
+  },
+  "problem": {
+    "authority_target": "FULL_FORMALIZATION",
+    "hard_mode": true,
+    "research_policy": {
+      "clean_room": false,
+      "knowledge_cutoff": null,
+      "rule": "Task-specific prior solutions may be consulted if provenance is recorded"
+    },
+    "sources": [],
+    "statement": "feasible_mono_length",
+    "statement_sha256": "5323dabeaf73afb9f68ce77d9f76fed0ca3b22f80105972e5bd40f170379369a"
+  },
+  "root_node": "root",
+  "schema": "oracle.frontier-formalizer.v1",
+  "semantic_court": {
+    "accepted_at": "2026-09-03T23:34:14Z",
+    "accepted_candidate": "answer-5323dabeaf73",
+    "candidates": {
+      "answer-5323dabeaf73": {
+        "artifact": null,
+        "created_at": "2026-09-03T23:34:08Z",
+        "creator": "close-driver",
+        "derived_from_answer_sha256": "5323dabeaf73afb9f68ce77d9f76fed0ca3b22f80105972e5bd40f170379369a",
+        "explanation": "feasible_mono_length",
+        "id": "answer-5323dabeaf73",
+        "lean_statement": "feasible_mono_length",
+        "reviews": [
+          {
+            "at": "2026-09-03T23:34:08Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "close-driver-structural",
+            "verdict": "APPROVE"
+          },
+          {
+            "at": "2026-09-03T23:34:14Z",
+            "checked_axes": [
+              "objects",
+              "quantifiers",
+              "hypotheses",
+              "conclusion",
+              "scope",
+              "definitions"
+            ],
+            "issues": [],
+            "reviewer": "gemini-external-court",
+            "verdict": "APPROVE"
+          }
+        ],
+        "source_alignment": [
+          {
+            "lean": "feasible_mono_length",
+            "source": "contract"
+          }
+        ],
+        "statement_sha256": "5323dabeaf73afb9f68ce77d9f76fed0ca3b22f80105972e5bd40f170379369a"
+      }
+    },
+    "min_reviews": 2
+  },
+  "updated_at": "2026-09-03T23:34:14Z"
+}

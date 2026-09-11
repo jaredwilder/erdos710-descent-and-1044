@@ -1,0 +1,365 @@
+{
+ "schemaVersion": "oracle.erdos1044-physics-kill.v1",
+ "hypothesis": "M2B-36cc40472c60206ff5a6",
+ "what": "the transfer's own falsifier, run against the transfer, on the half that needs no fabrication: does the discontinuity survive finite source radius, degradation, imaging blur and unequal source strengths?",
+ "cliff_alive_rule": "equal-spacing keeps exactly 3 compartments AND Lambda(nudge6deg)/Lambda(equal) >= 1.25",
+ "n_grid": 1201,
+ "source_radius_over_R": {
+  "sweep": "a/R",
+  "parameter": "a",
+  "rows": [
+   {
+    "value": 0.0,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.005,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.01,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.02,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.05,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.1,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.2,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   }
+  ],
+  "largest_value_where_cliff_survives": 0.2,
+  "verdict": "CLIFF SURVIVES up to 0.2"
+ },
+ "damkohler": {
+  "sweep": "Da",
+  "parameter": "damkohler",
+  "rows": [
+   {
+    "value": 0.0,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.01,
+    "equal_components": 1,
+    "equal_Lambda": 9.1647,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.694,
+    "pull_components": 3,
+    "pull_Lambda": 3.0112,
+    "cliff_ratio": 0.6213,
+    "cliff_alive": false
+   },
+   {
+    "value": 0.05,
+    "equal_components": 1,
+    "equal_Lambda": 9.135,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.7789,
+    "pull_components": 3,
+    "pull_Lambda": 3.0881,
+    "cliff_ratio": 0.6326,
+    "cliff_alive": false
+   },
+   {
+    "value": 0.1,
+    "equal_components": 1,
+    "equal_Lambda": 9.1181,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.8594,
+    "pull_components": 3,
+    "pull_Lambda": 3.1741,
+    "cliff_ratio": 0.6426,
+    "cliff_alive": false
+   },
+   {
+    "value": 0.5,
+    "equal_components": 1,
+    "equal_Lambda": 9.1601,
+    "nudge_components": 1,
+    "nudge_Lambda": 9.3367,
+    "pull_components": 1,
+    "pull_Lambda": 9.1231,
+    "cliff_ratio": 1.0193,
+    "cliff_alive": false
+   },
+   {
+    "value": 1.0,
+    "equal_components": 1,
+    "equal_Lambda": 9.297,
+    "nudge_components": 1,
+    "nudge_Lambda": 9.6714,
+    "pull_components": 1,
+    "pull_Lambda": 9.4435,
+    "cliff_ratio": 1.0403,
+    "cliff_alive": false
+   },
+   {
+    "value": 4.0,
+    "equal_components": 1,
+    "equal_Lambda": 9.957,
+    "nudge_components": 1,
+    "nudge_Lambda": 10.3708,
+    "pull_components": 1,
+    "pull_Lambda": 10.5535,
+    "cliff_ratio": 1.0416,
+    "cliff_alive": false
+   },
+   {
+    "value": 16.0,
+    "equal_components": 1,
+    "equal_Lambda": 10.88,
+    "nudge_components": 1,
+    "nudge_Lambda": 11.0319,
+    "pull_components": 1,
+    "pull_Lambda": 11.1368,
+    "cliff_ratio": 1.014,
+    "cliff_alive": false
+   }
+  ],
+  "largest_value_where_cliff_survives": 0.0,
+  "verdict": "CLIFF SURVIVES up to 0.0"
+ },
+ "imaging_blur_sigma_over_R": {
+  "sweep": "sigma/R",
+  "parameter": "sigma",
+  "rows": [
+   {
+    "value": 0.0,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.002,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.005,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.01,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.02,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.05,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.1,
+    "equal_components": 3,
+    "equal_Lambda": 3.0583,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.658,
+    "pull_components": 3,
+    "pull_Lambda": 2.9809,
+    "cliff_ratio": 1.8501,
+    "cliff_alive": true
+   }
+  ],
+  "largest_value_where_cliff_survives": 0.1,
+  "verdict": "CLIFF SURVIVES up to 0.1"
+ },
+ "source_strength_spread": {
+  "sweep": "dw",
+  "parameter": "weights",
+  "rows": [
+   {
+    "value": 0.0,
+    "equal_components": 3,
+    "equal_Lambda": 3.0597,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6605,
+    "pull_components": 3,
+    "pull_Lambda": 2.9824,
+    "cliff_ratio": 1.85,
+    "cliff_alive": true
+   },
+   {
+    "value": 0.005,
+    "equal_components": 2,
+    "equal_Lambda": 6.0097,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6498,
+    "pull_components": 3,
+    "pull_Lambda": 2.9964,
+    "cliff_ratio": 0.9401,
+    "cliff_alive": false
+   },
+   {
+    "value": 0.01,
+    "equal_components": 2,
+    "equal_Lambda": 5.9723,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6414,
+    "pull_components": 3,
+    "pull_Lambda": 3.0117,
+    "cliff_ratio": 0.9446,
+    "cliff_alive": false
+   },
+   {
+    "value": 0.02,
+    "equal_components": 2,
+    "equal_Lambda": 5.9279,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6297,
+    "pull_components": 3,
+    "pull_Lambda": 3.0459,
+    "cliff_ratio": 0.9497,
+    "cliff_alive": false
+   },
+   {
+    "value": 0.05,
+    "equal_components": 2,
+    "equal_Lambda": 5.8681,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6177,
+    "pull_components": 2,
+    "pull_Lambda": 5.7094,
+    "cliff_ratio": 0.9573,
+    "cliff_alive": false
+   },
+   {
+    "value": 0.1,
+    "equal_components": 2,
+    "equal_Lambda": 5.843,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.6326,
+    "pull_components": 2,
+    "pull_Lambda": 5.6459,
+    "cliff_ratio": 0.964,
+    "cliff_alive": false
+   },
+   {
+    "value": 0.2,
+    "equal_components": 2,
+    "equal_Lambda": 5.8751,
+    "nudge_components": 2,
+    "nudge_Lambda": 5.7069,
+    "pull_components": 2,
+    "pull_Lambda": 5.6498,
+    "cliff_ratio": 0.9714,
+    "cliff_alive": false
+   }
+  ],
+  "largest_value_where_cliff_survives": 0.0,
+  "verdict": "CLIFF SURVIVES up to 0.0"
+ },
+ "summary": {
+  "source_radius_over_R": "CLIFF SURVIVES up to 0.2",
+  "damkohler": "CLIFF SURVIVES up to 0.0",
+  "imaging_blur_sigma_over_R": "CLIFF SURVIVES up to 0.1",
+  "source_strength_spread": "CLIFF SURVIVES up to 0.0"
+ },
+ "resultSha256": "3c1700c0d33192358d36d1d88ffe9432cbc381af8f5f91bfe417ff1994a6cc51"
+}

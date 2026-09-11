@@ -1,0 +1,79 @@
+{
+ "schemaVersion": "oracle.erdos1044-threshold-sweep.v1",
+ "supersedes": "the damkohler column of physics-kill-receipt.json, which fixed c* = c(0) and therefore tested one calibration rather than the physics",
+ "n_grid": 901,
+ "rows": [
+  {
+   "damkohler": 0.0,
+   "max_components_at_any_threshold": 3,
+   "three_compartment_threshold_exists": true,
+   "best_level": 0.00854936356575453,
+   "Lambda_equal": 2.7388485919970718,
+   "Lambda_nudge": 5.737567513137519,
+   "cliff_ratio": 2.0949,
+   "cliff_alive_at_some_threshold": true
+  },
+  {
+   "damkohler": 0.01,
+   "max_components_at_any_threshold": 3,
+   "three_compartment_threshold_exists": true,
+   "best_level": 7.289989779242943,
+   "Lambda_equal": 2.7730633558637403,
+   "Lambda_nudge": 5.763330997163921,
+   "cliff_ratio": 2.0783,
+   "cliff_alive_at_some_threshold": true
+  },
+  {
+   "damkohler": 0.05,
+   "max_components_at_any_threshold": 3,
+   "three_compartment_threshold_exists": true,
+   "best_level": 4.963270332201015,
+   "Lambda_equal": 2.7174887630621356,
+   "Lambda_nudge": 2.8970800682016575,
+   "cliff_ratio": 1.0661,
+   "cliff_alive_at_some_threshold": false
+  },
+  {
+   "damkohler": 0.1,
+   "max_components_at_any_threshold": 3,
+   "three_compartment_threshold_exists": true,
+   "best_level": 4.003839793627709,
+   "Lambda_equal": 2.7436217229917808,
+   "Lambda_nudge": 2.8992829961824262,
+   "cliff_ratio": 1.0567,
+   "cliff_alive_at_some_threshold": false
+  },
+  {
+   "damkohler": 0.5,
+   "max_components_at_any_threshold": 3,
+   "three_compartment_threshold_exists": true,
+   "best_level": 1.9715183620842778,
+   "Lambda_equal": 3.2704558571258002,
+   "Lambda_nudge": 6.32720572314715,
+   "cliff_ratio": 1.9347,
+   "cliff_alive_at_some_threshold": true
+  },
+  {
+   "damkohler": 1.0,
+   "max_components_at_any_threshold": 3,
+   "three_compartment_threshold_exists": true,
+   "best_level": 1.2810377937575188,
+   "Lambda_equal": 3.469037913558607,
+   "Lambda_nudge": 6.693118142445565,
+   "cliff_ratio": 1.9294,
+   "cliff_alive_at_some_threshold": true
+  },
+  {
+   "damkohler": 4.0,
+   "max_components_at_any_threshold": 3,
+   "three_compartment_threshold_exists": true,
+   "best_level": 0.36351798561354987,
+   "Lambda_equal": 4.067709647758932,
+   "Lambda_nudge": 7.655199060436261,
+   "cliff_ratio": 1.8819,
+   "cliff_alive_at_some_threshold": true
+  }
+ ],
+ "verdict": "CLIFF RECOVERABLE BY CALIBRATION up to Da=4.0 \u2014 the earlier kill was a threshold artifact",
+ "resultSha256": "f103f8705f53908572b122a3a79979d649e7c64183bf1fc2452f1c673fa17e14"
+}

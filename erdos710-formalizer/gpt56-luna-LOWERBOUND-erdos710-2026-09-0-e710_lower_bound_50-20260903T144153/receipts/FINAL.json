@@ -1,0 +1,25 @@
+{
+  "accepted_target_id": "answer-e4806ad0fc90",
+  "accepted_target_sha256": "e4806ad0fc90fe99906b97b338b48fc99aa1180748db7a9bbd0df5b1d9c7c415",
+  "authority": "FULL_FORMALIZATION",
+  "campaign_id": "gpt56-luna-LOWERBOUND-erdos710-2026-09-0-e710_lower_bound_50-20260903T144153",
+  "campaign_state_hash": "e12d24601a2bd58f7dd52d85cbc4ad23b96b97ac4ff7fbdbf832f692c2d36d78",
+  "closed_at": "2026-09-03T21:43:27Z",
+  "frozen_answer_sha256": "e4806ad0fc90fe99906b97b338b48fc99aa1180748db7a9bbd0df5b1d9c7c415",
+  "hard_mode": true,
+  "kbk_promotions": [],
+  "kernel_receipt_hash": "3c6fa041e600f72e8e46810baf7b8d440164bb26f9c29249d472a74f25d23921",
+  "problem_statement_sha256": "e4806ad0fc90fe99906b97b338b48fc99aa1180748db7a9bbd0df5b1d9c7c415",
+  "receipt_sha256": "90c920ee50f839fd69ddee8c1fdbf6acc99fbaa746977ebb017d84f29b941ff2",
+  "root_declaration": "e710_lower_bound_50",
+  "root_lean_file": "C:\\Users\\jared\\Local Sites\\woocommerce-enterprise\\oracle\\frontier_formalizer\\work\\gpt56-luna-LOWERBOUND-erdos710-2026-09-0-e710_lower_bound_50-20260903T144153\\e710_lower_bound_50.lean",
+  "root_lean_sha256": "9864bc338c6f808bd8c74a680459812077ce3e3bd9a9503af01d56f3ddf90607",
+  "root_node": "root",
+  "root_state": "VERIFIED",
+  "schema": "oracle.frontier-formalizer.final-receipt.v1",
+  "semantic_reviewers": [
+    "close-driver-structural",
+    "gemini-external-court"
+  ],
+  "source_hashes": []
+}

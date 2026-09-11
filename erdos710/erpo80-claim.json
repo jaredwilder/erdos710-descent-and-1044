@@ -1,0 +1,24 @@
+{
+  "claim": "The minimal interval length f(n) such that (n, n+f(n)) contains distinct integers a_1..a_n with k dividing a_k satisfies known asymptotic bounds due to Erdos and Pomerance, and its exact asymptotic formula is open",
+  "domain": "number theory",
+  "novelty_target": "paper",
+  "novelty_mode": "HYPOTHESIS_NOVELTY",
+  "facets": {
+    "mechanism": "bipartite divisibility matching between indices 1..n and integers in an interval above n, Hall condition over primitive antichains",
+    "method": "asymptotic analysis of matching thresholds, multiple-counting functions of primitive sets, doubling conditions",
+    "outcome": "asymptotic bounds of the form c1 n sqrt(log n / log log n) and c2 n sqrt(log n) for the minimal interval length",
+    "entities": "Erdos Pomerance 1980 matchings distinct multiples natural numbers intervals"
+  },
+  "candidate_differentiators": [],
+  "alternative_facets": {},
+  "constraints": {
+    "search_queries": [
+      "Erdos Pomerance matching natural numbers distinct multiples interval 1980",
+      "minimal interval distinct multiples k divides a_k asymptotic",
+      "Erdos problem 710 divisibility matching interval",
+      "primitive sets multiples counting function doubling Hall condition interval"
+    ],
+    "patent_queries": []
+  },
+  "min_corpus": 10
+}
