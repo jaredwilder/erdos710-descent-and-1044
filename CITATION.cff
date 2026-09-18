@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it."
+title: "Erdos #710 finite Hall data and an Erdos #1044 closed form"
+authors:
+  - family-names: "Wilder"
+    given-names: "Jared"
+type: software
+repository-code: "https://github.com/jaredwilder/erdos710-descent-and-1044"
+license: Apache-2.0
